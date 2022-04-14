@@ -4,6 +4,7 @@ import { useFonts } from "expo-font";
 
 import Home from "./screens/Home";
 import Details from "./screens/Details";
+import { ProfileProvider } from "./context/ProfileContext";
 
 const Stack = createStackNavigator();
 
@@ -27,12 +28,14 @@ const App = () => {
   if (!loaded) return null;
 
   return (
-    <NavigationContainer theme={theme}>
-      <Stack.Navigator screenOptions={{ headerShown: false}} initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home}/>
-        <Stack.Screen name="Details" component={Details}/>
-      </Stack.Navigator>
-    </NavigationContainer>
+    <ProfileProvider>
+      <NavigationContainer theme={theme}>
+        <Stack.Navigator screenOptions={{ headerShown: false}} initialRouteName="Home">
+          <Stack.Screen name="Home" component={Home}/>
+          <Stack.Screen name="Details" component={Details}/>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </ProfileProvider>
   );
 }
 

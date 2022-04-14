@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { View, Text, Image, TextInput } from 'react-native'
 
 import { COLORS, SIZES, assets, FONTS } from '../constants'
+
 
 const HomeHeader = () => {
   return (

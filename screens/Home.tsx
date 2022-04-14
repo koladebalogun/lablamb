@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import { Text, View, SafeAreaView, FlatList } from "react-native"
 
 import { COLORS } from "../constants/theme"
@@ -6,21 +6,11 @@ import { FocusedStatusBar, ProfileDetailsCard, HomeHeader } from "../components"
 
 import Profile from "../api/Profile"
 import axios from "axios"
+import { ProfileContext } from "../context/ProfileContext"
 
 const Home = () => {
-  const [result, setResult] = useState()
+  const {result} = useContext(ProfileContext)
 
-  useEffect(() => {
-    axios
-      .get("https://randomuser.me/api")
-      .then(res => {
-        setResult(res.data.results)
-        console.log(result)
-      })
-      .catch(err => {
-        console.log(err)
-      })
-  }, [])
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.secondary }}>
