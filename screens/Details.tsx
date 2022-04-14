@@ -1,8 +1,8 @@
 import React from "react"
-import { Text, View, SafeAreaView, Image, StatusBar, FlatList } from "react-native"
+import { View, SafeAreaView, Image, FlatList } from "react-native"
 
-import { COLORS, SIZES, assets, FONTS } from '../constants'
-import {CircleButton, RectButton, SubInfo, ProfileDesc} from '../components'
+import { COLORS, SIZES, assets } from '../constants'
+import {CircleButton, SubInfo, ProfileDesc} from '../components'
 
 const DetailsHeader = ({data, navigation}) => (
   <View style={{ width: '100%', height: 373}}>

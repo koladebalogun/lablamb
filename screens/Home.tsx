@@ -1,11 +1,8 @@
-import React, { useState, useEffect, useContext } from "react"
-import { Text, View, SafeAreaView, FlatList } from "react-native"
+import React, {useContext } from "react"
+import { View, SafeAreaView, FlatList } from "react-native"
 
 import { COLORS } from "../constants/theme"
-import { FocusedStatusBar, ProfileDetailsCard, HomeHeader } from "../components"
-
-import Profile from "../api/Profile"
-import axios from "axios"
+import {ProfileDetailsCard, HomeHeader } from "../components"
 import { ProfileContext } from "../context/ProfileContext"
 
 const Home = () => {

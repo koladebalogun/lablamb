@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-import { COLORS, SIZES, SHADOWS, assets, FONTS } from "../constants";
+import { COLORS, SIZES, SHADOWS, FONTS } from "../constants";
 
 
 

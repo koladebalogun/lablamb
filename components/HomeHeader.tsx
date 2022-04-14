@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react'
 import { View, Text, Image, TextInput } from 'react-native'
 
-import { COLORS, SIZES, assets, FONTS } from '../constants'
+import { COLORS, SIZES, FONTS } from '../constants'
 
 
 const HomeHeader = () => {
