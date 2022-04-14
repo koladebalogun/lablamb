@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { View, Text, Image, TextInput } from 'react-native'
 
-import { COLORS, SIZES, assets, FONT, FONTS } from '../constants'
+import { COLORS, SIZES, assets, FONTS } from '../constants'
 
 const HomeHeader = () => {
   return (
@@ -18,7 +18,7 @@ const HomeHeader = () => {
       </View>
 
       <View style={{ marginVertical: SIZES.font}}>
-        <Text style={{ fontSize: SIZES.small, color: COLORS.white, fontFamily: FONTS.small}}>
+        <Text style={{ fontSize: SIZES.small, color: COLORS.white, fontFamily: FONTS.light}}>
           Hello, 👋
         </Text>
         <Text style={{ fontSize: SIZES.large, color: COLORS.white, marginTop: SIZES.base / 2, fontFamily: FONTS.bold}}>

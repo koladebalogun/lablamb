@@ -11,6 +11,7 @@ import { SubInfo, ProfileDetails } from "./SubInfo";
 const ProfileDetailsCard = ({ data }) => {
   const navigation = useNavigation()
 
+
   useEffect(()=> {
     console.log(data.picture.medium)
   })
@@ -36,7 +37,7 @@ const ProfileDetailsCard = ({ data }) => {
         }}
         />
 
-        <CircleButton imgUrl={assets.heart} right={10} top={10}/>
+        <CircleButton imgUrl={assets.heart} right={10} top={10} handlePress={() => {}}/>
       </View>
 
       <SubInfo data={data}/>
@@ -58,7 +59,7 @@ const ProfileDetailsCard = ({ data }) => {
           <RectButton
             minWidth={120}
             fontSize={SIZES.font}
-            handlePress = {() => navigation.navigate("Details", {data})}
+            handlePress = {() => navigation.navigate("Details" as never, {data} as never)}
           />
         </View>
       </View>

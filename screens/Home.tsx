@@ -23,10 +23,7 @@ const Home = () => {
   }, [])
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      {/* <FocusedStatusBar background={COLORS.primary} /> */}
-      {/* <Text>hello</Text> */}
-
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.secondary }}>
       <View style={{ flex: 1 }}>
         <View style={{ zIndex: 0 }}>
           <FlatList
